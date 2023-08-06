@@ -4,9 +4,9 @@ title: About Me
 permalink: /about/
 ---
 
-## 😎Hello, I'm Bssn520. Welcome to my page.     
+## 😎Hello, I'm Luke.      
 ### 😉Maybe it will surprise you, haha.  
-##### 🧑‍🎓I'm a college student. My major is computer. I'm interesting in it.  
+##### 🧑‍🎓I'm a college student now. My major is CS. I'm interesting in it.  
 ##### 🌸I usually watch films、dramas、animation in my free time.  
 ---
 ### Things | Coding with
