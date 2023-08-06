@@ -31,7 +31,7 @@ minima:
   #   - { platform: dribbble,       user_url: "https://dribbble.com/jekyll" }
   #   - { platform: facebook,       user_url: "https://www.facebook.com/jekyll" }
   #   - { platform: flickr,         user_url: "https://www.flickr.com/photos/jekyll" }
-     - { platform: github,         user_url: "https://github.com/Bssn520" }
+      - { platform: github,         user_url: "https://github.com/Bssn520" }
   #   - { platform: google_scholar, user_url: "https://scholar.google.com/citations?user=qc6CJjYAAAAJ" }
   #   - { platform: instagram,      user_url: "https://www.instagram.com/jekyll" }
   #   - { platform: keybase,        user_url: "https://keybase.io/jekyll" }
@@ -47,8 +47,8 @@ minima:
 # order as they should show up.
 #
 # header_pages:
-   - about.md
+#   - about.md
 
 # Set to `true` to show excerpts on the homepage.
 #
- show_excerpts: true
+# show_excerpts: true
