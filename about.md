@@ -1,18 +1,28 @@
 ---
 layout: page
-title: About
+title: About Me
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+## 😎Hello, I'm Bssn520. Welcome to my page.     
+### 😉Maybe it will surprise you, haha.  
+##### 🧑‍🎓I'm a college student. My major is computer. I'm interesting in it.  
+##### 🌸I usually watch films、dramas、animation in my free time.  
+---
+### Things | Coding with
+![](https://img.shields.io/badge/python-3.11-brightgreen)
+![](https://img.shields.io/badge/Animation-sakura-pink)
+![](https://img.shields.io/badge/Coding-Life-orange)
+![](https://img.shields.io/badge/Web-Security-red)  
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+<a href="https://github.com/Bssn520">
+  <img align="center" src="https://github-readme-stats.anuraghazra1.vercel.app/api?username=Bssn520&show_icons=true&include_all_commits=true&theme=material-palenight" alt="Bssn520's github stats" />
+  <img align="right" src="https://cdn.staticaly.com/gh/Bssn520/Images@master/Test/meng.2ljadw70zfs0.webp" height="425" width="250" />
+</a> 
+<a href="https://github.com/Bssn520">
+  <!-- Change the `github-readme-stats.anuraghazra1.vercel.app` to `github-readme-stats.vercel.app`  -->
+  <img align="center" src="https://github-readme-stats.anuraghazra1.vercel.app/api/top-langs/?username=Bssn520&layout=compact&theme=material-palenight" />
+  
+</a>
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+![](https://cdn.staticaly.com/gh/Bssn520/Images@master/Test/动画生涯个人喜好表.jaz46arct9s.webp)  
