@@ -22,7 +22,5 @@ permalink: /about/
 <a href="https://github.com/Bssn520">
   <!-- Change the `github-readme-stats.anuraghazra1.vercel.app` to `github-readme-stats.vercel.app`  -->
   <img align="center" src="https://github-readme-stats.anuraghazra1.vercel.app/api/top-langs/?username=Bssn520&layout=compact&theme=material-palenight" />
-  
 </a>
-
 ![](https://cdn.staticaly.com/gh/Bssn520/Images@master/Test/动画生涯个人喜好表.jaz46arct9s.webp)  
