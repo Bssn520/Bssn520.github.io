@@ -1,12 +1,12 @@
-title: Bssn
+title: Luke
 author:
-  name: Bssn
-  email: okkonull@gmail.com
+  name: Luke
+  email: 
 
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.
 description: >
-  Welcome to my little blog.
+  唯心主义
 
 # Build settings
 
@@ -51,4 +51,4 @@ minima:
 
 # Set to `true` to show excerpts on the homepage.
 #
-# show_excerpts: true
+  show_excerpts: true
