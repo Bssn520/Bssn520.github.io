@@ -16,7 +16,7 @@ permalink: /about/
 ![](https://img.shields.io/badge/Web-Security-red)  
 
 <a href="https://github.com/Bssn520">
-  <img align="center" src="https://cdn.staticaly.com/gh/Bssn520/Images@master/Test/meng.2ljadw70zfs0.webp" height="525" width="300" />
-  <img align="left" src="https://cdn.staticaly.com/gh/Bssn520/Images@master/Test/动画生涯个人喜好表.jaz46arct9s.webp" height="520" width="520" />
+  <img align="center" src="https://cdn.staticaly.com/gh/Bssn520/Images@master/Test/meng.2ljadw70zfs0.webp" height="425" width="250" />
+  <img align="left" src="https://cdn.staticaly.com/gh/Bssn520/Images@master/Test/动画生涯个人喜好表.jaz46arct9s.webp" height="450" width="425" />
 </a> 
  
