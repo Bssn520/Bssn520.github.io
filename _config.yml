@@ -1,5 +1,6 @@
 title: Luke
 author:
+  name:Luke
   name: https://kee.so/lukeqaq
   email: 
 
@@ -13,6 +14,7 @@ description: >
 theme: minima
 
 plugins:
+  - jekyll-feed
   - jekyll-seo-tag
 
 # Theme-specific settings
