@@ -47,7 +47,6 @@ minima:
 # order as they should show up.
 #
 header_pages:
-  - life.md
   - about.md
 
 
