@@ -1,12 +1,13 @@
 title: Luke
 author:
-  name: Contact me: https://kee.so/lukeqaq
+  name: Luke
   email: 
 
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.
-description: >
+description: >-
   "Read more, read newspapers more, eat less snacks, sleep more."
+  Contact me: https://kee.so/lukeqaq
 
 # Build settings
 
