@@ -13,10 +13,12 @@ permalink: /about/
 ![](https://img.shields.io/badge/python-3.11-brightgreen)
 ![](https://img.shields.io/badge/Animation-sakura-pink)
 ![](https://img.shields.io/badge/Coding-Life-orange)
-![](https://img.shields.io/badge/Web-Security-red)  
-
-<a href="https://github.com/Bssn520">
+![](https://img.shields.io/badge/Web-Security-red)     
+---
+### Life  |  Love   
+<a href="https://kee.so/lukeqaq">
   <img align="center" src="https://cdn.staticaly.com/gh/Bssn520/Images@master/Test/meng.2ljadw70zfs0.webp" height="425" width="250" />
   <img align="left" src="https://cdn.staticaly.com/gh/Bssn520/Images@master/Test/动画生涯个人喜好表.jaz46arct9s.webp" height="450" width="425" />
-</a> 
- 
+</a>     
+
+#### Contact me by clicking the img 🔝
