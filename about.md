@@ -13,7 +13,7 @@ permalink: /about/
 ![](https://img.shields.io/badge/python-3.11-brightgreen)
 ![](https://img.shields.io/badge/Animation-sakura-pink)
 ![](https://img.shields.io/badge/Coding-Life-orange)
-![](https://img.shields.io/badge/Web-Security-red)     
+![](https://img.shields.io/badge/Web-Security-red)
 ---
 ### Life  |  Love   
 <a href="https://kee.so/lukeqaq">
