@@ -16,6 +16,10 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
+# Disqus settings
+disqus:
+  shortname: Bssn520
+
 # Theme-specific settings
 
 minima:
@@ -52,4 +56,4 @@ header_pages:
 
 # Set to `true` to show excerpts on the homepage.
 #
-show_excerpts: true
+# show_excerpts: true
