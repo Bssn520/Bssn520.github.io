@@ -18,7 +18,7 @@ permalink: /about/
   <li>全栈</li>
   <li>Linux</li>
   <li>Web</li>
-  <li>Web Security</li>
+  <li>Security</li>
   <li>C++</li>
 </ul>
 
