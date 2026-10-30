@@ -158,3 +158,12 @@ html.search-open { overflow: hidden; }
 @media (prefers-color-scheme: dark) { .search-backdrop { background: rgba(0,0,0,.6); } }
 mark { background: rgba(255, 213, 79, .55); color: inherit; padding: 0 1px; border-radius: 2px; }
 @media (prefers-color-scheme: dark) { mark { background: rgba(255, 213, 79, .3); } }
+
+// ===== 页脚社交图标居中 =====
+.social-media-list li a {
+  display: flex; align-items: center; justify-content: center;
+  line-height: 0; padding: 8px; min-width: 40px; min-height: 40px; box-sizing: border-box;
+}
+.social-media-list .svg-icon {
+  width: 20px; height: 20px; display: block; vertical-align: middle;
+}
