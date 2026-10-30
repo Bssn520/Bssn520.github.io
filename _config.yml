@@ -16,10 +16,6 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
-# Disqus settings
-disqus:
-  shortname: Bssn520
-
 # Theme-specific settings
 
 minima:
