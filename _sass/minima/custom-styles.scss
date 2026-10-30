@@ -92,10 +92,36 @@ hr { border: 0; border-top: 1px solid var(--c-border); margin: 2em 0; }
   .highlight .s, .highlight .s1, .highlight .s2 { color: #98c379 !important; }
 }
 
-// ===== 顶部彩虹彩蛋条 =====
-.site-header::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 5px;
-  background: linear-gradient(90deg, #ff5f6d, #ffa53b, #ffe14d, #4cd964, #34c6e8, #5a7cff, #b45cff, #ff5f6d);
-  background-size: 200% 100%; animation: rainbow-flow 8s linear infinite; }
-.site-header { padding-top: 5px; }
-@keyframes rainbow-flow { from { background-position: 0 0; } to { background-position: 200% 0; } }
-@media (prefers-reduced-motion: reduce) { .site-header::before { animation: none; } }
+// ===== 顶部装饰条（切换：改 $top-bar 为 A / B / C）=====
+$top-bar: A;
+.site-header { border-top: 0; padding-top: 3px; }
+.site-header::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 3px; }
+@if $top-bar == A {
+  // A：雾蓝 → 薰衣草 → 桃粉 低饱和渐变细条
+  .site-header::before { background: linear-gradient(90deg, #9db4c8, #b6a7d1, #e8b4b0); }
+} @else if $top-bar == B {
+  // B：五段不等宽莫兰迪色块
+  .site-header::before { height: 4px;
+    background: linear-gradient(90deg, #a3b5a6 0 26%, #d9b99b 26% 41%, #b8a9c9 41% 70%, #e0afa0 70% 82%, #94a9bd 82% 100%); }
+} @else {
+  // C：灰细线，左端点缀三个小彩点
+  .site-header::before { height: 1px; top: 2px; background: #e8e8e8; }
+  .site-header::after { content: ""; position: absolute; left: 24px; top: 0; width: 5px; height: 5px;
+    border-radius: 50%; background: #e0afa0; box-shadow: 9px 0 #b8a9c9, 18px 0 #94a9bd; }
+}
+
+// ===== 分页 =====
+.pager { display: flex; justify-content: space-between; align-items: center; gap: 12px;
+  margin: 32px 0 8px; font-size: .9rem; flex-wrap: wrap; }
+.pager .disabled { color: var(--c-border); }
+.pager-nums { display: flex; gap: 4px; }
+.pager-nums a, .pager-nums span { min-width: 2em; text-align: center; padding: 2px 6px; border-radius: 4px; }
+.pager-nums .current { color: var(--c-text); font-weight: 600; border: 1px solid var(--c-border); }
+
+// ===== 搜索 =====
+.search-form input { width: 100%; box-sizing: border-box; font: inherit; padding: 10px 14px;
+  border: 1px solid var(--c-border); border-radius: 6px; background: var(--c-bg); color: var(--c-text); }
+.search-form input:focus { outline: none; border-color: var(--c-link); }
+.search-results .search-snippet { color: var(--c-muted); font-size: .9rem; margin: 4px 0 0; }
+mark { background: rgba(255, 213, 79, .55); color: inherit; padding: 0 1px; border-radius: 2px; }
+@media (prefers-color-scheme: dark) { mark { background: rgba(255, 213, 79, .3); } }

@@ -1,0 +1,12 @@
+---
+layout: page
+title: 搜索
+permalink: /search/
+---
+<form class="search-form" action="{{ '/search/' | relative_url }}" method="get" role="search">
+  <input id="search-input" type="search" name="q" placeholder="搜索标题、正文、标签…" autocomplete="off" autofocus>
+</form>
+<p id="search-status" class="post-meta"></p>
+<ul id="search-results" class="post-list search-results"></ul>
+<script>window.SEARCH_JSON = "{{ '/search.json' | relative_url }}";</script>
+<script src="{{ '/assets/search.js' | relative_url }}"></script>

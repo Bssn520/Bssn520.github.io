@@ -38,22 +38,22 @@ layout: base
       {%- endfor -%}
     </ul>
 
-    {% if site.paginate %}
-      <div class="pager">
-        <ul class="pagination">
+    {%- if site.paginate and paginator.total_pages > 1 %}
+      <nav class="pager" aria-label="分页">
         {%- if paginator.previous_page %}
-          <li><a href="{{ paginator.previous_page_path | relative_url }}" class="previous-page">{{ paginator.previous_page }}</a></li>
-        {%- else %}
-          <li><div class="pager-edge">•</div></li>
-        {%- endif %}
-          <li><div class="current-page">{{ paginator.page }}</div></li>
+          <a class="pager-prev" href="{{ paginator.previous_page_path | relative_url }}">← 上一页</a>
+        {%- else %}<span class="pager-prev disabled">← 上一页</span>{%- endif %}
+        <span class="pager-nums">
+        {%- for p in (1..paginator.total_pages) -%}
+          {%- if p == paginator.page -%}<span class="current">{{ p }}</span>
+          {%- elsif p == 1 -%}<a href="{{ '/' | relative_url }}">{{ p }}</a>
+          {%- else -%}<a href="{{ site.paginate_path | relative_url | replace: ':num', p }}">{{ p }}</a>{%- endif -%}
+        {%- endfor -%}
+        </span>
         {%- if paginator.next_page %}
-          <li><a href="{{ paginator.next_page_path | relative_url }}" class="next-page">{{ paginator.next_page }}</a></li>
-        {%- else %}
-          <li><div class="pager-edge">•</div></li>
-        {%- endif %}
-        </ul>
-      </div>
+          <a class="pager-next" href="{{ paginator.next_page_path | relative_url }}">下一页 →</a>
+        {%- else %}<span class="pager-next disabled">下一页 →</span>{%- endif %}
+      </nav>
     {%- endif %}
 
   {%- endif -%}
