@@ -23,7 +23,7 @@ h1, h2, h3, h4 { color: var(--c-text); line-height: 1.4; font-weight: 600; }
 p, ul, ol, pre, blockquote, table { margin-bottom: 1.1em; }
 
 // ===== 头部导航 =====
-.site-header { border-top: 3px solid var(--c-accent); border-bottom: 1px solid var(--c-border);
+.site-header { border-top: 0; border-bottom: 1px solid var(--c-border);
   background: var(--c-bg); position: sticky; top: 0; z-index: 10;
   backdrop-filter: saturate(160%) blur(8px); background: color-mix(in srgb, var(--c-bg) 88%, transparent); }
 .site-title, .site-title:visited { color: var(--c-text); font-weight: 700; letter-spacing: .02em; }
@@ -38,8 +38,7 @@ p, ul, ol, pre, blockquote, table { margin-bottom: 1.1em; }
 .page-heading { font-size: 1.8rem; margin-bottom: .6em; }
 .post-list-heading { font-size: 1.3rem; color: var(--c-muted); font-weight: 500; }
 .post-list { margin-left: 0; list-style: none; }
-.post-list > li { padding: 16px 0; margin: 0; border-bottom: 1px solid var(--c-border); }
-.post-list > li:last-child { border-bottom: 0; }
+.post-list > li { padding: 16px 0; margin: 0; }
 .post-list h3 { margin: 4px 0 0; font-size: 1.2rem; }
 .post-link, .post-link:visited { color: var(--c-text); font-size: inherit; }
 .post-link:hover { color: var(--c-link); text-decoration: none; }
@@ -92,3 +91,11 @@ hr { border: 0; border-top: 1px solid var(--c-border); margin: 2em 0; }
   .highlight .k, .highlight .kd, .highlight .kn { color: #c678dd !important; }
   .highlight .s, .highlight .s1, .highlight .s2 { color: #98c379 !important; }
 }
+
+// ===== 顶部彩虹彩蛋条 =====
+.site-header::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 5px;
+  background: linear-gradient(90deg, #ff5f6d, #ffa53b, #ffe14d, #4cd964, #34c6e8, #5a7cff, #b45cff, #ff5f6d);
+  background-size: 200% 100%; animation: rainbow-flow 8s linear infinite; }
+.site-header { padding-top: 5px; }
+@keyframes rainbow-flow { from { background-position: 0 0; } to { background-position: 200% 0; } }
+@media (prefers-reduced-motion: reduce) { .site-header::before { animation: none; } }
