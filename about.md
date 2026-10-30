@@ -7,7 +7,7 @@ permalink: /about/
 
 <div class="about">
 
-<p class="about-lead">你好，我是 <strong>Luke</strong>，全栈 / 后端工程师，入职约半年。</p>
+<p class="about-lead">你好，我是 <strong>Luke</strong>，全栈 / 后端工程师。</p>
 
 <p>日常用 <strong>Python</strong>、<strong>FastAPI</strong> 做 <strong>Agent</strong> 服务。AI 时代，争取把各个技能都点上。</p>
 
