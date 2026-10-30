@@ -5,6 +5,11 @@ author:
 - Luke
 categories: 网络IO
 comments: true
+permalink: /p/19/
+redirect_from:
+  - "/网络io/2024/12/08/reactor-epoll.html"
+  - "/网络io/2024/12/08/reactor-epoll"
+  - "/网络io/2024/12/08/reactor-epoll/"
 ---
 > 本文创建于 `2024-12-08`；修改于 `2024-12-26`；
 

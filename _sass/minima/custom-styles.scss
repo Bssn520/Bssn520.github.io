@@ -178,3 +178,6 @@ mark { background: rgba(255, 213, 79, .55); color: inherit; padding: 0 1px; bord
 .about-contact { list-style: none; margin: 0; padding: 0; }
 .about-contact li { margin: 0 0 .55em; padding: 0; display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: baseline; }
 .about-label { display: inline-block; min-width: 4.5em; color: var(--c-muted); font-size: .9rem; }
+
+// ===== 站级统计（克制） =====
+.site-stats { margin: .4em 0 0; font-size: .8rem; color: var(--c-muted); }

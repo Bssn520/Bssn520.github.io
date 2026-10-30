@@ -5,6 +5,11 @@ author:
 - Luke
 categories: Linux
 comments: true
+permalink: /p/20/
+redirect_from:
+  - "/linux/2024/12/10/Parallels上安装配置alpine虚拟机.html"
+  - "/linux/2024/12/10/Parallels上安装配置alpine虚拟机"
+  - "/linux/2024/12/10/Parallels上安装配置alpine虚拟机/"
 ---
 > 本文创建于 `2024-12-10`；修改于 `2024-12-10`；
 

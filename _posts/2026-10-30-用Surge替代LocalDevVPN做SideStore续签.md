@@ -5,6 +5,11 @@ author:
 - Luke
 categories: iOS
 comments: true
+permalink: /p/22/
+redirect_from:
+  - "/ios/2026/10/30/用Surge替代LocalDevVPN做SideStore续签.html"
+  - "/ios/2026/10/30/用Surge替代LocalDevVPN做SideStore续签"
+  - "/ios/2026/10/30/用Surge替代LocalDevVPN做SideStore续签/"
 ---
 > 本文创建于 `2026-10-30`；
 
