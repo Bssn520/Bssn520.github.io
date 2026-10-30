@@ -1,8 +1,12 @@
 (function () {
+  var modal = document.getElementById('search-modal');
+  var toggle = document.getElementById('search-toggle');
+  if (!modal) return;
   var input = document.getElementById('search-input');
   var list = document.getElementById('search-results');
   var status = document.getElementById('search-status');
-  var data = null;
+  var data = null, loading = null, lastFocus = null;
+
   function esc(s) { return String(s).replace(/[&<>"']/g, function (c) { return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]; }); }
   function reEsc(s) { return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
   function hl(text, terms) {
@@ -17,10 +21,15 @@
     var start = Math.max(0, pos - 40), end = Math.min(content.length, pos + 100);
     return (start > 0 ? '…' : '') + content.slice(start, end) + (end < content.length ? '…' : '');
   }
-  function run(q) {
-    var terms = q.toLowerCase().split(/\s+/).filter(Boolean);
+  function load() {
+    if (!loading) loading = fetch(window.SEARCH_JSON).then(function (r) { return r.json(); }).then(function (j) { data = j; });
+    return loading;
+  }
+  function run() {
+    var terms = input.value.toLowerCase().split(/\s+/).filter(Boolean);
     list.innerHTML = '';
-    if (!terms.length) { status.textContent = ''; return; }
+    if (!terms.length) { status.textContent = '输入关键词，支持多个词空格分隔'; return; }
+    if (!data) { status.textContent = '加载中…'; return; }
     var res = [];
     data.forEach(function (p) {
       var title = (p.title || '').toLowerCase();
@@ -37,23 +46,43 @@
       res.push({ p: p, s: score });
     });
     res.sort(function (a, b) { return b.s - a.s || (a.p.date < b.p.date ? 1 : -1); });
-    status.textContent = '找到 ' + res.length + ' 篇';
+    status.textContent = res.length ? '找到 ' + res.length + ' 篇' : '没有找到相关文章';
     list.innerHTML = res.map(function (r) {
       var p = r.p, tags = [].concat(p.categories || [], p.tags || []);
-      return '<li><span class="post-meta">' + esc(p.date) + (tags.length ? ' · ' + hl(tags.join(' / '), terms) : '') +
-        '</span><h3><a class="post-link" href="' + esc(p.url) + '">' + hl(p.title, terms) + '</a></h3>' +
-        '<p class="search-snippet">' + hl(snippet(p.content || '', terms), terms) + '</p></li>';
+      return '<li><a href="' + esc(p.url) + '"><span class="search-meta">' + esc(p.date) +
+        (tags.length ? ' · ' + hl(tags.join(' / '), terms) : '') + '</span>' +
+        '<span class="search-title">' + hl(p.title, terms) + '</span>' +
+        '<span class="search-snippet">' + hl(snippet(p.content || '', terms), terms) + '</span></a></li>';
     }).join('');
   }
-  var q = new URLSearchParams(location.search).get('q') || '';
-  input.value = q;
-  fetch(window.SEARCH_JSON).then(function (r) { return r.json(); }).then(function (j) {
-    data = j; run(input.value);
-    input.addEventListener('input', function () {
-      run(input.value);
-      var u = new URL(location.href); if (input.value) u.searchParams.set('q', input.value); else u.searchParams.delete('q');
-      history.replaceState(null, '', u);
-    });
+  function open() {
+    if (!modal.hidden) return;
+    lastFocus = document.activeElement;
+    modal.hidden = false;
+    document.documentElement.classList.add('search-open');
+    input.focus(); input.select();
+    load().then(run); run();
+  }
+  function close() {
+    if (modal.hidden) return;
+    modal.hidden = true;
+    document.documentElement.classList.remove('search-open');
+    if (lastFocus && lastFocus.focus) lastFocus.focus();
+  }
+  window.openSearch = open;
+  if (toggle) toggle.addEventListener('click', open);
+  input.addEventListener('input', run);
+  modal.addEventListener('click', function (e) { if (e.target.closest('[data-close]')) close(); });
+  modal.addEventListener('keydown', function (e) {
+    if (e.target.matches('kbd[data-close]') && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); close(); }
   });
-  document.querySelector('.search-form').addEventListener('submit', function (e) { e.preventDefault(); });
+  document.addEventListener('keydown', function (e) {
+    var tag = (e.target.tagName || '').toLowerCase();
+    var typing = tag === 'input' || tag === 'textarea' || e.target.isContentEditable;
+    if (e.key === 'Escape') { close(); return; }
+    if ((e.key === 'k' || e.key === 'K') && (e.ctrlKey || e.metaKey)) { e.preventDefault(); modal.hidden ? open() : close(); return; }
+    if (e.key === '/' && !typing && modal.hidden) { e.preventDefault(); open(); }
+  });
+  var q = new URLSearchParams(location.search).get('q');
+  if (q) { input.value = q; open(); }
 })();
