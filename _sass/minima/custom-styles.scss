@@ -167,3 +167,14 @@ mark { background: rgba(255, 213, 79, .55); color: inherit; padding: 0 1px; bord
 .social-media-list .svg-icon {
   width: 20px; height: 20px; display: block; vertical-align: middle;
 }
+
+// ===== About 页 =====
+.about .about-lead { font-size: 1.15rem; margin-bottom: .4em; }
+.about h2 { font-size: 1.15rem; margin-top: 1.8em; margin-bottom: .7em;
+  padding-left: 0; border-left: 0; border-bottom: 1px solid var(--c-border); padding-bottom: .35em; font-weight: 600; }
+.about-tags { list-style: none; margin: 0 0 1em; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.about-tags li { margin: 0; padding: 4px 12px; border: 1px solid var(--c-border); border-radius: 999px;
+  font-size: .85rem; color: var(--c-text); background: var(--c-code-bg); line-height: 1.4; }
+.about-contact { list-style: none; margin: 0; padding: 0; }
+.about-contact li { margin: 0 0 .55em; padding: 0; display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: baseline; }
+.about-label { display: inline-block; min-width: 4.5em; color: var(--c-muted); font-size: .9rem; }

@@ -1,37 +1,37 @@
 ---
 layout: page
-title: Coding & Beyond
+title: About
 permalink: /about/
 ---
 
-## 😎 Hello, I’m Luke!
+<div class="about">
 
-### 😉 You might find this surprising—haha!
+<p class="about-lead">你好，我是 <strong>Luke</strong>。</p>
 
-##### 🧑‍🎓 I’m currently a college student majoring in Computer Science. I’m passionate about it and always eager to learn more.
+<p>全栈 / 后端工程师，入职约半年。日常主要用 <strong>Python</strong> 和 <strong>FastAPI</strong> 做接口与服务，也会碰前端和部署；最近在折腾 <strong>Agent</strong>、工具调用这类智能体相关的事情。</p>
 
-##### 🌸 In my free time, I enjoy watching movies, TV shows, and anime.
+<p>喜欢把复杂问题拆开、写清楚，也爱在博客里记一点踩坑和备忘。技术栈偏后端，但全栈都能扛。</p>
 
----
+<h2>技能</h2>
+<ul class="about-tags">
+  <li>Python</li>
+  <li>FastAPI</li>
+  <li>Agent</li>
+  <li>全栈</li>
+  <li>Linux</li>
+  <li>Web</li>
+  <li>Web Security</li>
+  <li>C++</li>
+</ul>
 
-### Things | Coding with
+<h2>兴趣</h2>
+<p>业余爱看电影、剧集和动画，偶尔写点笔记。写码之余靠这些换换脑子。</p>
 
-<p align="left">
-  <img src="https://img.shields.io/badge/Qt-brightgreen" />
-  <img src="https://img.shields.io/badge/C++-brightgreen" />
-  <img src="https://img.shields.io/badge/Linux-brightgreen" />
-  <img src="https://img.shields.io/badge/python-brightgreen" />
-  <img src="https://img.shields.io/badge/Coding&Life-brightgreen" />
-  <img src="https://img.shields.io/badge/WebSecurity-brightgreen" />
-</p>
+<h2>联系</h2>
+<ul class="about-contact">
+  <li><span class="about-label">Email</span> <a href="mailto:Bssn520@duck.com">Bssn520@duck.com</a></li>
+  <li><span class="about-label">GitHub</span> <a href="https://github.com/Bssn520" rel="me" target="_blank">@Bssn520</a></li>
+  <li><span class="about-label">Blog</span> <a href="{{ '/' | relative_url }}">bssn520.github.io</a></li>
+</ul>
 
----
-
-### Life | Love
-
-<a href="https://kee.so/lukeqaq">
-  <img align="center" src="https://raw.githubusercontent.com/Bssn520/Images/master/Test/meng.2ljadw70zfs0.webp" height="425" width="250" />
-  <img align="left" src="https://cdn.jsdelivr.net/gh/Bssn520/Images@master/Test/IMG_1159.2ixuglk8rfc0.webp" height="425" width="400" />
-</a>
-
-#### Contact me by clicking the img 🔝
+</div>
