@@ -9,7 +9,7 @@ permalink: /about/
 
 <p class="about-lead">你好，我是 <strong>Luke</strong>，全栈 / 后端工程师，入职约半年。</p>
 
-<p>日常用 <strong>Python</strong>、<strong>FastAPI</strong> 做服务，也在折腾 <strong>Agent</strong>。AI 时代，争取把各个技能都点上。</p>
+<p>日常用 <strong>Python</strong>、<strong>FastAPI</strong> 做 <strong>Agent</strong> 服务。AI 时代，争取把各个技能都点上。</p>
 
 <h2>技能</h2>
 <ul class="about-tags">
@@ -24,7 +24,7 @@ permalink: /about/
 </ul>
 
 <h2>兴趣</h2>
-<p>业余爱看电影、剧集和动画，偶尔写点笔记。</p>
+<p>业余爱看电影、剧集和动画，也看看哲学、理财，偶尔玩肉鸽游戏，写点笔记。</p>
 
 <h2>联系</h2>
 <ul class="about-contact">
